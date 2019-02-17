@@ -1,0 +1,86 @@
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Style the navigation menu */
+
+.topnav {             /* Hide the links inside the navigation menu (except for logo/home) */
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+    #myLinks {
+      display: none;
+    }
+    a {              /* Style navigation menu links */
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      display: block;
+        &.icon {          /* Style the hamburger menu */
+          background: black;
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+        &:hover {         /* Add a grey background color on mouse-over */
+          background-color: #ddd;
+          color: black;
+        }
+    }
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #4CAF50;
+  color: white;
+} 

@@ -1,7 +1,6 @@
-html {
-	background-color: red;
-}
-
-p {
-	color: green;
-}
+@import 'partials/normalize',
+		'partials/base-styles',
+		'partials/content-styles',
+		'partials/layout-styles',
+		'partials/media-queries'
+		;
