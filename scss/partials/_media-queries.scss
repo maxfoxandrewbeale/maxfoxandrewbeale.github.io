@@ -5,20 +5,38 @@ Media Queries */
     h1 {
         margin: 0;
     }
+    img {
+        &.wide {
+            display: none;
+        }
+        &.mobile{
+			//width: 30%;
+            display: none;
+			// float: right;
+		}
+    }
 }
 
 @include mq('sm') {
-    img {
-        &.wide {
-            //display: ;
-        }
+    .image-showcase {
+        img {
+            &.mobile {
 
+            }
+            &.wide {
+                display: inline-block;
+            }
+
+        }
     }
     .about {
-        image.profile {
+        img.profile {
             margin-right: 10px;
     		margin-bottom: 10px;
         }
+    }
+    * {
+        border: 1px solid red;
     }
 }
 
