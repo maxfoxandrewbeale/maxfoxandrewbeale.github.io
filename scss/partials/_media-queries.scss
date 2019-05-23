@@ -1,0 +1,30 @@
+
+
+@include mq('xs') {
+    h1 {
+        margin: 0;
+    }
+}
+
+@include mq('sm') {
+    img {
+        &.wide {
+            display: inline-flex;
+        }
+
+    }
+    .about {
+        image.profile {
+            margin-right: 10px;
+    		margin-bottom: 10px;
+        }
+    }
+}
+
+@include mq('med') {
+
+}
+
+@include mq('lg') {
+
+}

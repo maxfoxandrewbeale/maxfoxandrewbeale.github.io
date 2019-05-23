@@ -1,0 +1,92 @@
+.wrapper {
+  width: 90%;
+  margin: auto;
+}
+
+/* Main Content */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 25px 0 0;
+    img.profile {
+            width: 65%;
+		    border-radius: 50%;
+	}
+    p {
+        margin: 10px auto 0;
+    }
+}
+
+.work {
+    h2 {
+        text-align: center;
+    }
+    h3 {
+        font-size: 17px;
+        margin-bottom: 0;
+    }
+    .fourthree {
+        //margin-right: 10px;
+    }
+    .image-showcase {
+        display: flex;
+        }
+	img {
+		max-width: 100%;
+		border-radius: 5px;
+		&.wide {
+			display: none;
+		}
+		&.fourthree {
+			width: 69%;
+			// float: left;
+		}
+		&.mobile{
+			width: 30%;
+            display: none;
+			// float: right;
+		}
+    }
+}
+
+.contact {
+    margin-bottom: 10px;
+    a.email-address, a.twitter-handle {
+        color: #333;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .fas, .fab {
+        margin-right: 10px;
+        font-size: 18px;
+    }
+}
+
+//icons
+
+.chevron {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+
+//footer
+
+footer {
+    margin: 10px 0 20px;
+}
+
+//social
+.social {
+    text-align: center;
+    .fab {
+        font-size: 40px;
+        color: #333;
+        text-decoration: none;
+        padding: 5px;
+    }
+}

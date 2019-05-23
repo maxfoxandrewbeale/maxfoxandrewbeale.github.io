@@ -317,6 +317,12 @@ ul {
   padding: 0;
   list-style: none;
 }*/
+* {
+  font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif; }
+
+h2 {
+  text-align: center; }
+
 /* Style the navigation menu */
 .topnav {
   /* Hide the links inside the navigation menu (except for logo/home) */
@@ -324,29 +330,120 @@ ul {
   background-color: #333;
   position: relative; }
   .topnav #myLinks {
-    display: none; }
+    display: none;
+    background-color: #333; }
   .topnav a {
     /* Style navigation menu links */
-    color: white;
-    padding: 14px 16px;
+    margin: 2%;
+    color: #fff;
     text-decoration: none;
     font-size: 17px;
     display: block; }
     .topnav a.icon {
       /* Style the hamburger menu */
-      background: black;
+      height: 44px;
+      width: 44px;
+      background: #333;
+      padding: auto;
+      font-size: 24px;
       display: block;
       position: absolute;
       left: 0;
       top: 0; }
     .topnav a:hover {
       /* Add a grey background color on mouse-over */
-      background-color: #ddd;
+      background-color: #ddf;
       color: black; }
+    .topnav a h1 {
+      text-align: center;
+      margin: 2% 0;
+      font-size: 23px;
+      height: 24px;
+      padding: 10px;
+      border-radius: 0 5px 5px 0;
+      font-weight: 400; }
+    .topnav a i {
+      text-align: center;
+      margin: 10px 11px; }
+
+h2 {
+  font-size: 20px; }
+
+p, h2, h3, h4 {
+  color: #333; }
 
 /* Style the active link (or home/logo) */
-.active {
-  background-color: #4CAF50;
-  color: white; }
+.wrapper {
+  width: 90%;
+  margin: auto; }
+
+/* Main Content */
+.about {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 25px 0 0; }
+  .about img.profile {
+    width: 65%;
+    border-radius: 50%; }
+  .about p {
+    margin: 10px auto 0; }
+
+.work h2 {
+  text-align: center; }
+.work h3 {
+  font-size: 17px;
+  margin-bottom: 0; }
+.work .image-showcase {
+  display: flex; }
+.work img {
+  max-width: 100%;
+  border-radius: 5px; }
+  .work img.wide {
+    display: none; }
+  .work img.fourthree {
+    width: 69%; }
+  .work img.mobile {
+    width: 30%;
+    display: none; }
+
+.contact {
+  margin-bottom: 10px; }
+  .contact a.email-address, .contact a.twitter-handle {
+    color: #333;
+    text-decoration: none;
+    font-size: 20px; }
+  .contact .fas, .contact .fab {
+    margin-right: 10px;
+    font-size: 18px; }
+
+.chevron {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  color: #333; }
+
+footer {
+  margin: 10px 0 20px; }
+
+.social {
+  text-align: center; }
+  .social .fab {
+    font-size: 40px;
+    color: #333;
+    text-decoration: none;
+    padding: 5px; }
+
+@media (max-width: 575px) {
+  h1 {
+    margin: 0; } }
+@media (min-width: 576px) {
+  img.wide {
+    display: inline-flex; }
+
+  .about image.profile {
+    margin-right: 10px;
+    margin-bottom: 10px; } }
 
 /*# sourceMappingURL=stylesheet.css.map */

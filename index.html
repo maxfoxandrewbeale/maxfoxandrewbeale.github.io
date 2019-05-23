@@ -2,20 +2,19 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 	<title>Max Andrew-Beale, Web Developer</title>
 </head>
 <body>
 	<header>
 		<div class="topnav">
-		  <h1><a href="#home" class="active">Max Andrew-Beale</a></h1>
-		  <!-- Navigation links (hidden by default) -->
+		  <a href="#home" class="active"><h1>Max Andrew-Beale</h1></a>
 		  <div id="myLinks">
-		    <a href="#news">News</a>
-		    <a href="#contact">Contact</a>
-		    <a href="#about">About</a>
+			  <a href="#about">About</a>
+			  <a href="#work">Work</a>
+			  <a href="#contact">Contact</a>
 		  </div>
-		  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+
 		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
 		    <i class="fa fa-bars"></i>
 		  </a>
@@ -24,61 +23,53 @@
 	</header>
 	<div class="wrapper">
 		<div class="about">
-			<h2>About Me</h2>
-			<img src="img/profile.jpg">
+			<img class="profile" src="https://www.gravatar.com/avatar/65ae42587c837a1dc3e588275e5ff9f6?s=500">
+			<h2 class="about" id="#about">About Me</h2>
+			<p>I'm a self-taught Web and WordPress Developer with a passion for all things tech.
+			</p>
 			<p></p>
-			<p></p>
+		</div>
+		<div class="chevron">
+			<i class="fa fa-chevron-down"></i>
 		</div>
 		<div class="work">
-			<h2>Work</h2>
-			<div class="showcase">
-				<h3>Website Name</h3>
-				<div>
-					<img src="">
-					<img src="">
-					<img src="">
+			<h2 id="work">Work</h2>
+			<div class="showcase item">
+				<!-- <img src="img/rose-sculpture1.jpg" alt="Rose Beale Art"> -->
+				<h3><a>Rose Beale Art</a></h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				</p>
+				<div class="image-showcase">
+					<img class="wide" src="https://placeimg.com/960/540/tech">
+					<img class="mobile" src="https://placeimg.com/305/540/tech">
+					<img class="fourthree" src="https://placeimg.com/720/540/tech">
 				</div>
-				<p></p>
-				<p></p>
-				<p></p>
 			</div>
-			<div class="showcase">
-				<h3>Website Name</h3>
-				<div>
-					<img src="">
-					<img src="">
-					<img src="">
-				</div>
-				<p></p>
-				<p></p>
-				<p></p>
-			</div>
-			<div class="showcase">
-				<h3>Website Name</h3>
-				<div>
-					<img src="">
-					<img src="">
-					<img src="">
-				</div>
-				<p></p>
-				<p></p>
-				<p></p>
-			</div>
+		</div>
+		<div class="chevron">
+			<i class="fa fa-chevron-down"></i>
 		</div>
 		<div class="contact">
-			<h2>Contact Me</h2>
-			<p></p>
-
+			<h2 id="contact">Contact</h2>
+				<!-- <p> GMT +0.0 </p> -->
+				<p>Please feel free to contact me with any enquiries.</p>
+			<div>
+				<i class="fas fa-envelope"></i>
+				<a class="email-address" href="mailto:maxandrewbeale@gmail.com?&subject=Helllooo">maxandrewbeale@gmail.com</a>
+			</div>
+			<div>
+				<i class="fab fa-twitter"></i><a class="twitter-handle" href="https://twitter.com/maxandrewbeale">@maxandrewbeale</a>
+			</div>
 		</div>
 	</div>
-
 	<footer>
-		<img src="img/fox glove.jpg" href="foxglove design site">
-			<div class="social media icons">
-				
-
-
-			</div>
+		<div class="social">
+			<a href="https://twitter.com/maxandrewbeale"><i class="fab fa-facebook-f"></i></a>
+			<a href="https://twitter.com/maxandrewbeale"><i class="fab fa-twitter"></i></a>
+			<a href="https://twitter.com/maxandrewbeale"><i class="fab fa-linkedin-in"></i></a>
+			<a href="https://twitter.com/maxandrewbeale"><i class="fab fa-github-alt"></i></a>
+		</div>
 	</footer>
 	<script type="text/javascript" src="js/scripts.js"></script>
 </body>
