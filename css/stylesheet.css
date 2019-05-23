@@ -321,7 +321,10 @@ ul {
   font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif; }
 
 h2 {
-  text-align: center; }
+  text-align: center;
+  border: 2px solid #555;
+  border-radius: 5px;
+  padding: 5px; }
 
 /* Style the navigation menu */
 .topnav {
@@ -373,6 +376,10 @@ p, h2, h3, h4 {
   color: #333; }
 
 /* Style the active link (or home/logo) */
+/* --------------
+Content Styles */
+/* -------------
+Layout Styles */
 .wrapper {
   width: 90%;
   margin: auto; }
@@ -403,9 +410,8 @@ p, h2, h3, h4 {
   .work img.wide {
     display: none; }
   .work img.fourthree {
-    width: 69%; }
+    width: 100%; }
   .work img.mobile {
-    width: 30%;
     display: none; }
 
 .contact {
@@ -424,24 +430,28 @@ p, h2, h3, h4 {
   font-size: 18px;
   color: #333; }
 
+/* Style the Footer */
 footer {
-  margin: 10px 0 20px; }
+  padding: 20px;
+  margin: 10px 0 0;
+  background-color: #333; }
+  footer i {
+    color: white; }
 
 .social {
   text-align: center; }
   .social .fab {
     font-size: 40px;
-    color: #333;
+    color: #eee;
     text-decoration: none;
     padding: 5px; }
 
+/* -------------
+Media Queries */
 @media (max-width: 575px) {
   h1 {
     margin: 0; } }
 @media (min-width: 576px) {
-  img.wide {
-    display: inline-flex; }
-
   .about image.profile {
     margin-right: 10px;
     margin-bottom: 10px; } }
