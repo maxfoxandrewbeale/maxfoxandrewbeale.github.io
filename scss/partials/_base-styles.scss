@@ -47,10 +47,17 @@ h2 {
             position: absolute;
             left: 0;
             top: 0;
+            &:hover {
+                color: red;
+            }
         }
+
         &:hover {         /* Add a grey background color on mouse-over */
-          background-color: #ddf;
-          color: black;
+          // background-color: #ddf;
+          //color: black;
+
+          // Add colour red on hover
+          //color: red;
         }
         h1 {
             text-align: center;
@@ -77,8 +84,7 @@ p, h2, h3, h4 {
 }
 
 
-/* Style the active link (or home/logo) */
-// .active {
-//   background-color: #4CAF50;
-//   color: white;
-// }
+/*Style the active link (or home/logo) */
+.active {
+   color: red;
+}

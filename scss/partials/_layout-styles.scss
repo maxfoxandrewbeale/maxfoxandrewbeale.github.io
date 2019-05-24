@@ -6,7 +6,10 @@ Layout Styles */
   margin: auto;
 }
 
-/* Main Content */
+/* ------------
+Main Content */
+
+/* About */
 
 .about {
     display: flex;
@@ -23,9 +26,16 @@ Layout Styles */
     }
 }
 
+/* Website Showcase */
+
 .work {
+    .showcase {
+        display: flex;
+
+    }
     h2 {
-        text-align: center;
+        width: 52px;
+        margin: 10px auto;
     }
     h3 {
         font-size: 17px;
@@ -36,28 +46,38 @@ Layout Styles */
     }
     .image-showcase {
         display: flex;
-        }
+        flex-wrap: wrap;
+    }
 	img {
-		max-width: 100%;
+		//max-width: 100%;
 		border-radius: 5px;
 		&.fourthree {
-            width: 100%;
+            //width: 100%;
 			//width: 69%;
 			// float: left;
 		}
     }
 }
 
+/* Contact */
+
 .contact {
-    margin-bottom: 10px;
+    margin-bottom: 18px;
     a.email-address, a.twitter-handle {
         color: #333;
         text-decoration: none;
-        font-size: 20px;
+        font-weight: 500;
+        &:hover {
+            color: red;
+        }
     }
     .fas, .fab {
         margin-right: 10px;
         font-size: 18px;
+    }
+    h2 {
+        width: 77px;
+        margin: 10px auto;
     }
 }
 
@@ -74,24 +94,23 @@ Layout Styles */
 /* Style the Footer */
 
 footer {
-
-}
-footer {
     padding: 20px;
     margin: 10px 0 0;
     background-color: #333;
     i {
-        color: white;
+        color: white
     }
-}
-
-//social
-.social {
-    text-align: center;
-    .fab {
-        font-size: 40px;
-        color: #eee;
-        text-decoration: none;
-        padding: 5px;
+    //social
+    .social {
+        text-align: center;
+        .fab {
+            font-size: 40px;
+            color: #eee;
+            text-decoration: none;
+            padding: 5px;
+            &:hover {
+                color: red;
+            }
+        }
     }
 }

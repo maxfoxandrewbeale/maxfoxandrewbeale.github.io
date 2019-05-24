@@ -2,6 +2,10 @@
 Media Queries */
 
 @include mq('xs') {
+    .showcase {
+        flex-direction: column;
+
+    }
     h1 {
         margin: 0;
     }
@@ -18,13 +22,18 @@ Media Queries */
 }
 
 @include mq('sm') {
+    .showcase {
+        flex-direction: row-reverse;
+
+    }
     .image-showcase {
+        max-height: 540px;
         img {
             &.mobile {
-
+                display: none;
             }
             &.wide {
-                display: inline-block;
+                display: none;
             }
 
         }
@@ -35,13 +44,37 @@ Media Queries */
     		margin-bottom: 10px;
         }
     }
+    .work {
+        img {
+            &.wide {
+
+            }
+            &.fourthree {
+
+            }
+            &.mobile {
+
+            }
+        }
+    }
     * {
-        border: 1px solid red;
+
+
     }
 }
 
 @include mq('med') {
+    .image-showcase {
+        img {
+            &.mobile {
+                display: inline-block;
+            }
+            &.wide {
+                display: inline-block;
+            }
 
+        }
+    }
 }
 
 @include mq('lg') {
