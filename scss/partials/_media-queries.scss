@@ -3,6 +3,7 @@ Media Queries
 -----------*/
 
 @include mq('xs') {
+
     .showcase {
         flex-direction: column;
 
@@ -40,7 +41,7 @@ Media Queries
                 display: none;
             }
             &.wide {
-                // display: none;
+                display: none;
 
             }
 
@@ -48,26 +49,29 @@ Media Queries
     }
     .about {
         img.profile {
-            margin-right: 10px;
-    		margin-bottom: 10px;
+            margin: 20px auto 20px;
         }
     }
 }
 
 @include mq('med') {
+    hr {
+        display: none;
+    }
+    h2 {
+        background-color: white;
+        border: none;
+        font-size: 26px;
+    }
     .about {
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-start;
+        align-items: stretch;
         h2 {
             order: -1;
             margin: inherit auto;
             display: block;
             text-align: center;
-
-        }
-        img.profile {
-            width: 30%;
-
         }
     }
     .image-showcase {

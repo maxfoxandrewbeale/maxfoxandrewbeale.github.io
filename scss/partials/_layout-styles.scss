@@ -15,19 +15,17 @@ Main Content */
 .about {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 25px 0 0;
-
+    //flex-wrap: wrap;
+    //align-items: center;
     img {
-            width: 65%;
-		    border-radius: 50%;
+        width: 65%;
+	    border-radius: 50%;
+        margin: 6px auto 20px;
 	}
     p {
 
     }
 }
-
 /* Website Showcase */
 
 .work {
@@ -35,8 +33,13 @@ Main Content */
         display: flex;
 
     }
-    h2 {
-        width: 52px;
+    .section-title {
+        margin: inherit auto;
+        h2 {
+            width: 52px;
+            text-align: center;
+            margin: 10px auto;
+        }
     }
     h3 {
         font-size: 17px;
@@ -74,18 +77,19 @@ Main Content */
 /* Contact */
 
 .contact {
-    margin-bottom: 18px;
+    margin-bottom: 30px;
     a.email-address, a.twitter-handle {
         color: #333;
         text-decoration: none;
         font-weight: 500;
+        vertical-align: middle;
         &:hover {
             color: red;
         }
     }
     .fas, .fab {
         margin-right: 10px;
-        font-size: 18px;
+        font-size: 24px;
     }
     h2 {
         width: 77px;
@@ -100,6 +104,15 @@ Main Content */
     text-align: center;
     font-size: 18px;
     color: #333;
+}
+
+.fa-chevron-down {
+    color: #333;
+    font-size: 22px;
+    &:hover {
+        color: red;
+        transition: 0.5s ease;
+    }
 }
 
 //footer
