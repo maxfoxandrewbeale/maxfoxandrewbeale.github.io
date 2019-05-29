@@ -1,5 +1,6 @@
-/* -------------
-Media Queries */
+/* ----------
+Media Queries
+-----------*/
 
 @include mq('xs') {
     .showcase {
@@ -27,13 +28,15 @@ Media Queries */
 
     }
     .image-showcase {
-        max-height: 540px;
+        max-width: 50%;
+        height: auto;
         img {
             &.mobile {
                 display: none;
             }
             &.wide {
-                display: none;
+                // display: none;
+
             }
 
         }
@@ -44,33 +47,24 @@ Media Queries */
     		margin-bottom: 10px;
         }
     }
-    .work {
-        img {
-            &.wide {
-
-            }
-            &.fourthree {
-
-            }
-            &.mobile {
-
-            }
-        }
-    }
-    * {
-
-
-    }
 }
 
 @include mq('med') {
+    .about {
+        flex-direction: row;
+        img.profile {
+            width: 20%;
+
+        }
+    }
     .image-showcase {
+
         img {
             &.mobile {
-                display: inline-block;
+                //display: inline-block;
             }
             &.wide {
-                display: inline-block;
+                //display: inline-block;
             }
 
         }

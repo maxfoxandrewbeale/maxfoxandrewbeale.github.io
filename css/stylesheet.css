@@ -335,9 +335,13 @@ h2 {
   .topnav #myLinks {
     display: none;
     background-color: #333; }
+    .topnav #myLinks:last-child {
+      margin-bottom: 2%; }
+    .topnav #myLinks a {
+      padding-left: 10px; }
   .topnav a {
     /* Style navigation menu links */
-    margin: 2%;
+    margin: 2% 2% 10px;
     color: #fff;
     text-decoration: none;
     font-size: 17px;
@@ -359,7 +363,7 @@ h2 {
       /* Add a grey background color on mouse-over */ }
     .topnav a h1 {
       text-align: center;
-      margin: 2% 0;
+      margin: 2% 0 10px;
       font-size: 23px;
       height: 24px;
       padding: 10px;
@@ -379,10 +383,12 @@ p, h2, h3, h4 {
 .active {
   color: red; }
 
-/* --------------
-Content Styles */
-/* -------------
-Layout Styles */
+/* -----------
+Content Styles
+------------*/
+/* ----------
+Layout Styles
+-----------*/
 .wrapper {
   width: 90%;
   margin: auto; }
@@ -396,18 +402,18 @@ Main Content */
   flex-wrap: wrap;
   align-items: center;
   margin: 25px 0 0; }
-  .about img.profile {
+  .about img {
     width: 65%;
     border-radius: 50%; }
   .about p {
     margin: 10px auto 0; }
 
 /* Website Showcase */
-.work .showcase {
+.work .showcase, .work .container {
   display: flex; }
 .work h2 {
   width: 52px;
-  margin: 10px auto; }
+  margin: 20px auto 40px; }
 .work h3 {
   font-size: 17px;
   margin-bottom: 0; }
@@ -416,6 +422,12 @@ Main Content */
   flex-wrap: wrap; }
 .work img {
   border-radius: 5px; }
+
+.showcase {
+  margin-bottom: 20px; }
+
+.site-description {
+  margin-right: 30px; }
 
 /* Contact */
 .contact {
@@ -456,8 +468,9 @@ footer {
       footer .social .fab:hover {
         color: red; }
 
-/* -------------
-Media Queries */
+/* ----------
+Media Queries
+-----------*/
 @media (max-width: 575px) {
   .showcase {
     flex-direction: column; }
@@ -474,19 +487,18 @@ Media Queries */
     flex-direction: row-reverse; }
 
   .image-showcase {
-    max-height: 540px; }
+    max-width: 50%;
+    height: auto; }
     .image-showcase img.mobile {
-      display: none; }
-    .image-showcase img.wide {
       display: none; }
 
   .about img.profile {
     margin-right: 10px;
     margin-bottom: 10px; } }
 @media (min-width: 801px) {
-  .image-showcase img.mobile {
-    display: inline-block; }
-  .image-showcase img.wide {
-    display: inline-block; } }
+  .about {
+    flex-direction: row; }
+    .about img.profile {
+      width: 20%; } }
 
 /*# sourceMappingURL=stylesheet.css.map */

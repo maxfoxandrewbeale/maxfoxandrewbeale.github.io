@@ -2,7 +2,7 @@ $breakpoints: (
 	'xs': 575px,
 	'sm': 576px,
 	'med': 801px,
-	'lg': 992,
+	'lg': 1200px,
 );
 
 @mixin mq($break) {

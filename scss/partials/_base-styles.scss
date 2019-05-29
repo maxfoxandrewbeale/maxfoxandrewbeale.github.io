@@ -28,14 +28,19 @@ h2 {
         //float:
         display: none;
         background-color: #333;
+        &:last-child {
+            margin-bottom: 2%;
+        }
+        a {
+            padding-left: 10px;
+        }
     }
     a {              /* Style navigation menu links */
-      margin: 2%;
+      margin: 2% 2% 10px;
       color: #fff;
       text-decoration: none;
       font-size: 17px;
       display: block;
-
         &.icon {          /* Style the hamburger menu */
             height: 44px;
             width: 44px;
@@ -61,7 +66,7 @@ h2 {
         }
         h1 {
             text-align: center;
-            margin: 2% 0;
+            margin: 2% 0 10px;
             font-size: 23px;
             height: 24px;
             padding: 10px;
