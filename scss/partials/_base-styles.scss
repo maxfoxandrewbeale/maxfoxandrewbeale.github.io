@@ -1,3 +1,6 @@
+/*---------
+Base Styles
+---------*/
 
 * {
   font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;
@@ -8,10 +11,22 @@ h2 {
     border: 2px solid #555;
     border-radius: 5px;
     padding: 5px;
+    background-color: #eee;
 }
 
-
-
+/* Style Horizontal Rules */
+.section-title {
+    margin: 20px auto;
+    height: 37px;
+    position: relative;
+    hr {
+        width: 100%;
+        color: #333;
+        position: absolute;
+        top: 10px;
+        z-index: -1;
+    }
+}
 
 
 
@@ -28,7 +43,7 @@ h2 {
         //float:
         display: none;
         background-color: #333;
-        &:last-child {
+        div:last-child {
             margin-bottom: 2%;
         }
         a {
