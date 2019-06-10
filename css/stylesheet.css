@@ -455,7 +455,8 @@ Main Content */
 .work img {
   max-width: 100%;
   height: auto;
-  border-radius: 5px; }
+  border-radius: 5px;
+  border: solid #eee 2px; }
 
 .showcase {
   margin: 10px 0; }
@@ -476,11 +477,13 @@ Main Content */
     width: 77px;
     margin: 10px auto; }
 
+.fa-chevron-down {
+  font-size: 26px;
+  color: #333; }
+
 .chevron {
   margin: 0 auto;
-  text-align: center;
-  font-size: 18px;
-  color: #333; }
+  text-align: center; }
 
 /* Style the Footer */
 footer {
@@ -517,54 +520,42 @@ Media Queries
   img.mobile {
     display: none; } }
 @media (min-width: 576px) {
-  h2 {
-    margin: 0; }
+  h3 {
+    margin-top: 20px; }
+
+  .wrapper {
+    width: 70%; }
 
   .chevron {
     font-size: 26px;
     margin: 20px auto;
     color: black; }
 
-  .work {
-    margin: auto;
-    justify-content: space-between; }
-    .work .site-description {
-      margin-left: 30px; }
-    .work div:nth-of-type(odd) {
-      flex-direction: row-reverse; }
-      .work div:nth-of-type(odd) .site-description {
-        margin-left: 0px; }
-
-  .image-showcase {
-    max-width: 50%;
-    height: auto; }
-    .image-showcase img.mobile {
-      display: none; }
-    .image-showcase img.wide {
-      display: none; }
-
   .about img.profile {
     margin: 20px auto 20px; }
-  .about .about-text {
-    width: 75%;
-    margin-left: 50px; }
 
   div .contact {
     margin-bottom: 50px; }
   .contact h2 {
-    margin: 0; }
+    margin: 0 auto; }
   .contact .fas, .contact .fab {
     font-size: 25px; }
   .contact .email-address, .contact .twitter-handle {
     font-size: 20px; }
 
   .work h3 {
-    font-size: 24px;
-    margin: 0; }
+    font-size: 24px; }
   .work .showcase {
-    margin-top: 36px; }
-  .work .site-description {
-    margin-right: 10px; } }
+    flex-direction: column; }
+
+  .image-showcase {
+    max-width: 100%;
+    height: auto;
+    margin: auto; }
+    .image-showcase img.mobile {
+      display: none; }
+    .image-showcase img.wide {
+      display: none; } }
 @media (min-width: 801px) {
   p {
     font-size: 20px; }
@@ -575,7 +566,11 @@ Media Queries
   h2 {
     background-color: white;
     border: none;
-    font-size: 30px; }
+    font-size: 30px;
+    margin: 0; }
+
+  h3 {
+    margin: 0; }
 
   .topnav a h1 {
     font-size: 40px;
@@ -588,11 +583,43 @@ Media Queries
     align-items: stretch; }
     .about img {
       margin-right: 20px; }
+    .about .about-text {
+      width: 75%;
+      margin-left: 50px; }
     .about h2 {
       order: -1;
       margin: inherit auto;
       display: block;
-      text-align: center; } }
+      text-align: center; }
+
+  .work {
+    margin-bottom: 50px; }
+    .work div:nth-of-type(even) {
+      flex-direction: row; }
+      .work div:nth-of-type(even) .site-description {
+        margin-left: 30px; }
+    .work div:nth-of-type(odd) .site-description {
+      margin-right: 30px; }
+
+  .image-showcase {
+    max-width: 50%;
+    height: auto; }
+    .image-showcase img.mobile {
+      display: none; }
+    .image-showcase img.wide {
+      display: none; }
+
+  .work {
+    justify-content: space-between; }
+    .work div:nth-of-type(odd) {
+      flex-direction: row-reverse; }
+    .work .showcase {
+      margin-top: 36px; }
+
+  .contact h2 {
+    text-align: left;
+    margin: 0;
+    padding: 0; } }
 @media (min-width: 1200px) {
   .wrapper {
     width: 80%; } }

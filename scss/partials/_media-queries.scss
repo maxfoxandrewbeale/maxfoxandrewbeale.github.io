@@ -32,57 +32,30 @@ Media Queries
     * {
         //border: 1px solid green;
     }
-    h2 {
-        margin: 0;
+    h3 {
+        margin-top: 20px;
+    }
+    .wrapper {
+        width:70%;
     }
     .chevron {
         font-size: 26px;
         margin: 20px auto;
         color: black;
     }
-    .work {
-        margin: auto;
-        justify-content: space-between;
-        .site-description {
-            margin-left: 30px;
-        }
-        div:nth-of-type(odd) {
-        flex-direction: row-reverse;
-        .site-description {
-            margin-left: 0px;
-        }
-        }
-    }
 
-    .image-showcase {
-        max-width: 50%;
-        height: auto;
-        img {
-            &.mobile {
-                display: none;
-            }
-            &.wide {
-                display: none;
-
-            }
-
-        }
-    }
     .about {
         img.profile {
             margin: 20px auto 20px;
         }
-        .about-text {
-            width: 75%;
-            margin-left: 50px;
-        }
+
     }
     .contact {
         div & {
             margin-bottom: 50px;
         }
         h2 {
-            margin: 0;
+            margin: 0 auto;
         }
         .fas, .fab {
             font-size: 25px;
@@ -94,13 +67,26 @@ Media Queries
     .work {
         h3 {
             font-size: 24px;
-            margin: 0;
         }
         .showcase {
-            margin-top: 36px;
+            flex-direction: column;
         }
-        .site-description {
-            margin-right: 10px;
+
+    }
+
+    .image-showcase {
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+        img {
+            &.mobile {
+                display: none;
+            }
+            &.wide {
+                display: none;
+
+            }
+
         }
     }
 }
@@ -119,6 +105,10 @@ Media Queries
         background-color: white;
         border: none;
         font-size: 30px;
+        margin: 0;
+    }
+    h3 {
+        margin: 0;
     }
     .topnav a h1 {
         font-size: 40px;
@@ -132,6 +122,10 @@ Media Queries
         img {
             margin-right: 20px;
         }
+        .about-text {
+            width: 75%;
+            margin-left: 50px;
+        }
         h2 {
             order: -1;
             margin: inherit auto;
@@ -139,16 +133,48 @@ Media Queries
             text-align: center;
         }
     }
+    .work {
+        margin-bottom: 50px;
+        div:nth-of-type(even) {
+            flex-direction: row;
+            .site-description {
+                margin-left: 30px;
+            }
+        }
+        div:nth-of-type(odd) {
+            .site-description {
+                margin-right: 30px;
+            }
+        }
+    }
     .image-showcase {
-
+        max-width: 50%;
+        height: auto;
         img {
             &.mobile {
-                //display: inline-block;
+                display: none;
             }
             &.wide {
-                //display: inline-block;
+                display: none;
+
             }
 
+        }
+    }
+    .work {
+        justify-content: space-between;
+        div:nth-of-type(odd) {
+            flex-direction: row-reverse;
+        }
+        .showcase {
+            margin-top: 36px;
+        }
+    }
+    .contact {
+        h2 {
+            text-align: left;
+            margin: 0;
+            padding: 0;
         }
     }
 }

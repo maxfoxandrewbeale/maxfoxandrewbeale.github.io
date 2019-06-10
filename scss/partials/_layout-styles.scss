@@ -46,7 +46,6 @@ Main Content */
         margin-bottom: 0;
     }
     .fourthree {
-        //margin-right: 10px;
     }
     .image-showcase {
         display: flex;
@@ -56,6 +55,7 @@ Main Content */
 		max-width: 100%;
         height: auto;
 		border-radius: 5px;
+        border: solid #eee 2px;
 		&.fourthree {
             //width: 100%;
 			//width: 69%;
@@ -68,9 +68,7 @@ Main Content */
     margin: 10px 0;
 }
 
-.site-description {
-    //margin-right: 30px;
-}
+
 
 .image-showcase {
     //margin-left: 30px;
@@ -99,11 +97,14 @@ Main Content */
 
 //icons
 
-.chevron {
-    margin: 0 auto;
-    text-align: center;
-    font-size: 18px;
+.fa-chevron-down {
+    font-size: 26px;
     color: #333;
+}
+
+.chevron {
+        margin: 0 auto;
+        text-align: center;
 }
 
 //footer
