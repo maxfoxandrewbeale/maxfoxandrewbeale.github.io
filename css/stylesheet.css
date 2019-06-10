@@ -431,21 +431,19 @@ Main Content */
 /* About */
 .about {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center; }
   .about img {
-    width: 65%;
+    max-width: 100%;
     border-radius: 50%;
     margin: 6px auto 20px; }
 
 /* Website Showcase */
 .work .showcase {
   display: flex; }
-.work .section-title {
+.work h2 {
+  width: 52px;
   margin: inherit auto; }
-  .work .section-title h2 {
-    width: 52px;
-    text-align: center;
-    margin: 10px auto; }
 .work h3 {
   font-size: 17px;
   margin-bottom: 0; }
@@ -453,6 +451,8 @@ Main Content */
   display: flex;
   flex-wrap: wrap; }
 .work img {
+  max-width: 100%;
+  height: auto;
   border-radius: 5px; }
 
 .showcase {
@@ -460,17 +460,16 @@ Main Content */
 
 /* Contact */
 .contact {
-  margin-bottom: 30px; }
+  margin-bottom: 18px; }
   .contact a.email-address, .contact a.twitter-handle {
     color: #333;
     text-decoration: none;
-    font-weight: 500;
-    vertical-align: middle; }
+    font-weight: 500; }
     .contact a.email-address:hover, .contact a.twitter-handle:hover {
       color: red; }
   .contact .fas, .contact .fab {
     margin-right: 10px;
-    font-size: 24px; }
+    font-size: 18px; }
   .contact h2 {
     width: 77px;
     margin: 10px auto; }
@@ -480,13 +479,6 @@ Main Content */
   text-align: center;
   font-size: 18px;
   color: #333; }
-
-.fa-chevron-down {
-  color: #333;
-  font-size: 22px; }
-  .fa-chevron-down:hover {
-    color: red;
-    transition: 0.5s ease; }
 
 /* Style the Footer */
 footer {
@@ -509,6 +501,12 @@ footer {
 Media Queries
 -----------*/
 @media (max-width: 575px) {
+  * {
+    border: 1px solid cyan; }
+
+  .about .img {
+    width: 60%; }
+
   .showcase {
     flex-direction: column; }
 
@@ -520,6 +518,9 @@ Media Queries
   img.mobile {
     display: none; } }
 @media (min-width: 576px) {
+  * {
+    border: 1px solid green; }
+
   .work {
     margin: auto;
     justify-content: space-between; }
@@ -537,6 +538,9 @@ Media Queries
   .about img.profile {
     margin: 20px auto 20px; } }
 @media (min-width: 801px) {
+  * {
+    border: 1px solid blue; }
+
   hr {
     display: none; }
 
@@ -549,12 +553,17 @@ Media Queries
     flex-direction: row;
     justify-content: flex-start;
     align-items: stretch; }
+    .about img {
+      margin-right: 20px; }
     .about h2 {
       order: -1;
       margin: inherit auto;
       display: block;
       text-align: center; } }
 @media (min-width: 1200px) {
+  * {
+    border: 1px solid red; }
+
   .wrapper {
     width: 60%; } }
 
