@@ -433,6 +433,8 @@ Main Content */
   display: flex;
   flex-direction: column;
   align-items: center; }
+  div .about {
+    margin-top: 38px; }
   .about img {
     max-width: 100%;
     border-radius: 50%;
@@ -515,11 +517,23 @@ Media Queries
   img.mobile {
     display: none; } }
 @media (min-width: 576px) {
+  h2 {
+    margin: 0; }
+
+  .chevron {
+    font-size: 26px;
+    margin: 20px auto;
+    color: black; }
+
   .work {
     margin: auto;
     justify-content: space-between; }
+    .work .site-description {
+      margin-left: 30px; }
     .work div:nth-of-type(odd) {
       flex-direction: row-reverse; }
+      .work div:nth-of-type(odd) .site-description {
+        margin-left: 0px; }
 
   .image-showcase {
     max-width: 50%;
@@ -530,15 +544,43 @@ Media Queries
       display: none; }
 
   .about img.profile {
-    margin: 20px auto 20px; } }
+    margin: 20px auto 20px; }
+  .about .about-text {
+    width: 75%;
+    margin-left: 50px; }
+
+  div .contact {
+    margin-bottom: 50px; }
+  .contact h2 {
+    margin: 0; }
+  .contact .fas, .contact .fab {
+    font-size: 25px; }
+  .contact .email-address, .contact .twitter-handle {
+    font-size: 20px; }
+
+  .work h3 {
+    font-size: 24px;
+    margin: 0; }
+  .work .showcase {
+    margin-top: 36px; }
+  .work .site-description {
+    margin-right: 10px; } }
 @media (min-width: 801px) {
+  p {
+    font-size: 20px; }
+
   hr {
     display: none; }
 
   h2 {
     background-color: white;
     border: none;
-    font-size: 26px; }
+    font-size: 30px; }
+
+  .topnav a h1 {
+    font-size: 40px;
+    margin: 0 auto;
+    padding: 10px 0 30px; }
 
   .about {
     flex-direction: row;
@@ -553,6 +595,6 @@ Media Queries
       text-align: center; } }
 @media (min-width: 1200px) {
   .wrapper {
-    width: 60%; } }
+    width: 80%; } }
 
 /*# sourceMappingURL=stylesheet.css.map */

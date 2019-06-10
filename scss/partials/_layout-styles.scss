@@ -17,7 +17,9 @@ Main Content */
     flex-direction: column;
     //flex-wrap: wrap;
     align-items: center;
-
+    div & {
+        margin-top:38px;
+    }
     img {
             max-width: 100%;
 		    border-radius: 50%;
