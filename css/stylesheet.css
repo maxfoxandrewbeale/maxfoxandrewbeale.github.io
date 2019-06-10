@@ -321,7 +321,7 @@ ul {
 Base Styles
 ---------*/
 * {
-  font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif; }
+  font-family: 'Roboto', sans-serif; }
 
 h2 {
   text-align: center;
