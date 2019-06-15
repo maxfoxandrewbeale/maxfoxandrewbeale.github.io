@@ -363,7 +363,6 @@ hr {
   position: relative;
   padding-bottom: 20px; }
   .topnav #myLinks {
-    display: none;
     background-color: #333; }
     .topnav #myLinks div:last-child {
       margin-bottom: 2%; }
@@ -404,7 +403,7 @@ hr {
       font-weight: 400; }
     .topnav a i {
       text-align: center;
-      margin: 10px 11px; }
+      padding: 10px 11px; }
 
 h2 {
   font-size: 20px; }
@@ -477,6 +476,7 @@ Main Content */
     width: 77px;
     margin: 10px auto; }
 
+/*Icons*/
 .fa-chevron-down {
   font-size: 26px;
   color: #333; }
