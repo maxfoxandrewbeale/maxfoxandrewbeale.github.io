@@ -122,6 +122,9 @@ hr {
         i {
             text-align: center;
             padding: 10px 11px;
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
 }

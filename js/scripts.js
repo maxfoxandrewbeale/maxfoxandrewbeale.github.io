@@ -20,10 +20,18 @@ $("#burger").click(function() {
     }
 });
 
-
-
-// $("#button").click(function() {
-//     $([document.documentElement, document.body]).animate({
-//         scrollTop: $("#elementtoScrollToID").offset().top
-//     }, 2000);
-// });
+$(".about-nav").click(function (){
+    $('html, body').animate({
+        scrollTop:$("#about").offset().top
+    }, 1000);
+});
+$(".work-nav").click(function (){
+    $('html, body').animate({
+        scrollTop:$("#work").offset().top
+    }, 1000);
+});
+$(".contact-nav").click(function (){
+    $('html, body').animate({
+        scrollTop:$("#contact").offset().top
+    }, 1000);
+});
