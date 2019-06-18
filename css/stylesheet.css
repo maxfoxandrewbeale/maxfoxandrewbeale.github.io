@@ -404,6 +404,8 @@ hr {
     .topnav a i {
       text-align: center;
       padding: 10px 11px; }
+      .topnav a i:hover {
+        cursor: pointer; }
 
 h2 {
   font-size: 20px; }
